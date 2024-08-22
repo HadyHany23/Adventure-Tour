@@ -12,6 +12,7 @@
   transition: 0.2s linear;
 }
 
+// Variables
 $main-color: #219150;
 $black-color: #10221b;
 $white-color: #fff;
@@ -40,6 +41,10 @@ html {
   &::-webkit-scrollbar-thumb {
     background: $black-color;
   }
+}
+
+section {
+  padding: 5rem 9%;
 }
 
 .header {
@@ -165,6 +170,9 @@ html {
 @media (max-width: 1200px) {
   .header {
     padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
   }
 }
 
