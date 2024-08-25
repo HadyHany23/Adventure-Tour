@@ -267,6 +267,109 @@ section {
   }
 }
 
+.about {
+  background: $light-bg;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .image {
+    flex: 1 1 42rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+
+    img {
+      width: 100%;
+      box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .content {
+    flex: 1 1 42rem;
+
+    h3 {
+      font-size: 3rem;
+      color: $main-color;
+    }
+
+    p {
+      font-size: 1.5rem;
+      color: $black-color;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+  }
+}
+
+.shop {
+  .slide {
+    border: $border;
+
+    &:hover .image .icons {
+      transform: translateY(0);
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+      height: 30rem;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .icons {
+        width: 100%;
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+        text-align: center;
+        z-index: 10;
+        transform: translateY(7rem);
+
+        a {
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background-color: $black-color;
+          color: $white-color;
+          margin: 0 0.2rem;
+
+          &:hover {
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 1rem 0;
+      text-align: center;
+
+      h3 {
+        font-size: 2rem;
+        color: $black-color;
+      }
+
+      .price {
+        padding: 1rem 0;
+        font-size: 2.5rem;
+        color: $main-color;
+      }
+
+      .stars i {
+        font-size: 1.7rem;
+        color: $black-color;
+      }
+    }
+  }
+}
+
 // media quries
 
 @media (max-width: 1200px) {
@@ -281,6 +384,7 @@ section {
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+    scroll-padding-top: 7rem;
   }
 
   .home .box {
@@ -350,5 +454,9 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .heading {
+    font-size: 3rem;
   }
 }
