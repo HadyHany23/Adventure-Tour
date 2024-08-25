@@ -370,6 +370,130 @@ section {
   }
 }
 
+.packages {
+  background: $light-bg;
+
+  .box-container {
+    @include grid(32rem);
+
+    .box {
+      text-align: center;
+      background: $white-color;
+      border: $border;
+      box-shadow: $box-shadow;
+      border-radius: 0.5rem;
+
+      &:hover {
+        background: $black-color;
+
+        .content > * {
+          color: $white-color;
+        }
+
+        .btn {
+          border-color: $white-color;
+
+          &:hover {
+            background: $white-color;
+            color: $black-color;
+          }
+        }
+      }
+
+      .image {
+        height: 25rem;
+        overflow: hidden;
+        padding: 2rem;
+        padding-bottom: 0;
+        border-radius: 0.5rem;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 0.5rem;
+        }
+      }
+      .content {
+        padding: 2rem;
+
+        h3 {
+          font-size: 2rem;
+          color: $black-color;
+        }
+
+        p {
+          font-size: 1.5rem;
+          color: $black-color;
+          padding: 1rem 0;
+          line-height: 2;
+        }
+        .price {
+          font-size: 2rem;
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+
+.services {
+  background: $light-bg;
+
+  .box-container {
+    @include grid(31rem);
+
+    .box {
+      text-align: center;
+      padding: 2rem;
+      border: $border;
+      border-radius: .5rem;
+      background: $white-color;
+
+      &:hover {
+        background: $black-color;
+
+        img {
+          filter: invert(1);
+        }
+
+        p {
+          color: $white-color;
+        }
+
+        .btn {
+          border-color: $white-color;
+          color: $white-color;
+
+          &:hover {
+            background: $white-color;
+            color: $black-color;
+          }
+        }
+      }
+
+      img {
+        height: 10rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $main-color;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: $black-color;
+        padding: 1rem 0;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+
 // media quries
 
 @media (max-width: 1200px) {
