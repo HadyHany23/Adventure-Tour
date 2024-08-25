@@ -63,6 +63,13 @@ section {
   }
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: $black-color;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -72,6 +79,11 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
+
+  &.active {
+    background-color: $white-color;
+    box-shadow: $box-shadow;
+  }
 
   .logo {
     margin-right: auto;
@@ -223,6 +235,36 @@ section {
 .swiper-button-prev::after {
   font-size: 3rem;
   color: $black-color;
+}
+
+.category {
+  .box-container {
+    @include grid(29rem);
+
+    .box {
+      text-align: center;
+      padding: 1rem;
+
+      img {
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $main-color;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: $black-color;
+        padding: 1rem 0;
+        line-height: 2;
+      }
+    }
+  }
 }
 
 // media quries
